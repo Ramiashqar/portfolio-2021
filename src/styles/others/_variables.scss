@@ -1,0 +1,28 @@
+// FONTS
+$roboto-l: Roboto-Light, sans-serif;
+$roboto-r: Roboto-Regular, sans-serif;
+$roboto-b: Roboto-Bold, sans-serif;
+$roboto-black: Roboto-Black, sans-serif;
+$fraunces: Fraunces, serif;
+$ubuntu-r: UbuntuMono-Regular, monospace;
+$ubuntu-b: UbuntuMono-Bold, monospace;
+
+// transition func
+$transition-1: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+//clear fix workaround for floated elements
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+//absolute centering for block elements vertically and horizontally
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

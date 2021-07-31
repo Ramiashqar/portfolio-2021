@@ -1,0 +1,54 @@
+// MEDIA QUERY
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==xxs {
+    // < 280px for G-Fold
+    @media only screen and (max-width: 17.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint==xs {
+    // < 336px
+    @media only screen and (max-width: 21em) {
+      @content;
+    }
+  }
+  @if $breakpoint==sm {
+    //  < 640px
+    @media only screen and (max-width: 40em) {
+      @content;
+    }
+  }
+  @if $breakpoint==md {
+    //  < 768px
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint==lg {
+    //  < 1024px
+    @media only screen and (max-width: 64em) {
+      @content;
+    }
+  }
+  //  I develope here between 1024 - 1280px, so you should not need the xl breakpoint
+  @if $breakpoint==xl {
+    //  < 1280px
+    @media only screen and (max-width: 80em) {
+      @content;
+    }
+  }
+  @if $breakpoint==xxl {
+    //  < 1536px
+    @media only screen and (min-width: 96em) {
+      @content;
+    }
+  }
+}
+
+// mobile portrait: less than 640px
+// mobile landscape: > 640px
+// tablet portrait: > 768px
+// tablet landscape: > 1024px
+// laptop: > 1280px
+// 4K screens: > 1536
