@@ -63,7 +63,6 @@ module.exports = {
   },
   variants: {
     extend: {
-      fontFamily: ['hover', 'focus'],
     },
   },
   plugins: [],

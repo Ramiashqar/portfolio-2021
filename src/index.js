@@ -4,7 +4,7 @@ import "./custom.css"
 // import "./scripts/components/browserSupport"
 // import "./scripts/components/isDark"
 // TODO:
-//  [] Do This
+//  [] Visit https://resoc.io/setup after deployment
 
 // FIXME:
 //  [] Fix This
