@@ -1,6 +1,7 @@
 import "tailwindcss/tailwind.css"
-// import "./styles/app.scss"
-import "./custom.css"
+import "./app.scss"
+// import "./custom.css"
+import "./scripts/user"
 // import "./scripts/components/browserSupport"
 // import "./scripts/components/isDark"
 // TODO:
@@ -8,3 +9,4 @@ import "./custom.css"
 
 // FIXME:
 //  [] Fix This
+// [] Make Dark mode for svg coloring buu JS not tailwindCSS

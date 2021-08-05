@@ -1,0 +1,105 @@
+// @charset "UTF-8";
+
+// // Base
+// @import "others/fonts";
+// @import "others/variables";
+// @import "others/preflight";
+// @import "others/color-palette";
+// @import "others/media-query";
+// @import "others/animations";
+
+// // User
+// // Components
+// // @import "components/"
+
+// // Styles
+// @import "utilities";
+// @import "common";
+
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "STIX Two Text";
+  src: url("assets/fonts/STIXTwoText-VariableFont_wght.ttf");
+  font-display: swap;
+  font-weight: 1 999;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("assets/fonts/Karla-VariableFont_wght.ttf");
+  font-display: swap;
+  font-weight: 1 999;
+  font-style: normal;
+}
+input,
+textarea {
+  box-shadow: 0 35px 35px -15px rgba(0, 0, 0, 0.25),
+    inset 0 2px 3px 0.5px rgba(#000, 0.1);
+}
+
+@media (min-width: 768px) {
+  input,
+  textarea {
+    box-shadow: 0 35px 35px -15px rgba(0, 0, 0, 0.35),
+      inset 0 4px 4px 0.5px rgba(#000, 0.2);
+  }
+}
+
+.dark {
+  .logo-dark {
+    path {
+      fill: #fff;
+    }
+  }
+  .nav-icn {
+    svg {
+      rect {
+        fill: #fff;
+      }
+    }
+  }
+  .is-dark {
+    path {
+      stroke: #818181;
+    }
+  }
+  .dark-quote {
+    path {
+      fill: #3d3d3d;
+    }
+  }
+
+  .dark-graph {
+    .dark-gray {
+      fill: #818181;
+    }
+    .dark-black {
+      fill: #212124;
+    }
+    .black-black {
+      fill: #161618;
+    }
+  }
+  .social-icns {
+    path {
+      stroke: #818181;
+    }
+  }
+}
+
+.open {
+  .nav-bar-top {
+    rect {
+      width: 20px;
+      x: 10;
+    }
+  }
+  .nav-bar-bottom {
+    rect {
+      width: 40px;
+      x: 0;
+    }
+  }
+}
