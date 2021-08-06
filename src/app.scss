@@ -87,6 +87,14 @@ textarea {
       stroke: #818181;
     }
   }
+  #nav-content {
+    background-color: #181818 !important;
+  }
+  @media (min-width: 768px) {
+    #nav-content {
+      background-color: transparent !important;
+    }
+  }
 }
 
 .open {

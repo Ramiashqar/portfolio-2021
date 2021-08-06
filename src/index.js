@@ -9,4 +9,4 @@ import "./scripts/user"
 
 // FIXME:
 //  [] Fix This
-// [] Make Dark mode for svg coloring buu JS not tailwindCSS
+//  [X] Make Dark mode for svg coloring buu JS not tailwindCSS

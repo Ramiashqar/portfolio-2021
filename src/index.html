@@ -64,7 +64,7 @@
                     </svg>
                 </a>
                 <ul id="nav-content"
-                    class="hidden flex flex-col fixed top-0 left-0 z-50 bg-yellow-500 dark:bg-dark-bg w-full h-full justify-around items-center text-2xl font-black py-16 md:flex md:relative md:flex-row md:text-base  md:justify-evenly md:items-center md:font-semibold md:to-blue-500 md:w-[65vw] md:h-10 md:bg-transparent md:text-blue-500 lg:w-[55vw] lg:uppercase lg:font-bold xl:w-[50vw] xl:text-lg 2xl:text-xl dark:text-dark-blue1">
+                    class="hidden flex flex-col fixed top-0 left-0 z-50 bg-yellow-500 w-full h-full justify-around items-center text-2xl font-black py-16 md:flex md:relative md:flex-row md:text-base  md:justify-evenly md:items-center md:font-semibold md:w-[65vw] md:h-10 md:bg-transparent md:text-blue-500 lg:w-[65vw] lg:uppercase lg:font-bold xl:w-[70vw] xl:text-lg 2xl:text-xl dark:text-dark-blue1">
                     <li class="nav-content-item">
                         <a href="#about">About Me</a>
                     </li>
@@ -77,7 +77,8 @@
                     <li class="nav-content-item">
                         <a href="#testemonials">Testimonials</a>
                     </li>
-                    <li class="bg-blue-500 text-gray-500 px-12 py-6 md:px-4 md:py-2 dark:bg-dark-blue2 nav-content-item">
+                    <li
+                        class="bg-blue-500 text-gray-500 px-12 py-6 md:px-4 md:py-2 xl:px-8 xl:py-[18px] 2xl:px-10 2xl:py-5 dark:bg-dark-blue2 nav-content-item">
                         <a href="#contact">Contact Me</a>
                     </li>
                 </ul>
@@ -85,7 +86,8 @@
                     <svg class="nav-bar-top" width="40" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="4" rx="2" fill="#333652" />
                     </svg>
-                    <svg class="-mt-2.5 nav-bar-bottom" width="40" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="-mt-2.5 nav-bar-bottom" width="40" height="12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <rect x="10" y="8" width="20" height="4" rx="2" fill="#333652" />
                     </svg>
                 </a>
@@ -96,18 +98,20 @@
         <header id="hero"
             class="flex justify-center items-center mt-24 flex-col md:flex-row md:justify-around md:items-center md:relative">
             <div
-                class="font-serif text-center text-3xl text-blue-500 md:text-2xl md:text-left md:-translate-y-24 md:ml-4 lg:text-3xl 2xl:text-5xl dark:text-dark-blue1">
+                class="font-serif text-center text-3xl text-blue-500 md:text-2xl md:text-left md:-translate-y-44 md:ml-4 lg:text-3xl xl:-translate-y-64 2xl:text-5xl dark:text-dark-blue1">
                 Hi, <div class="font-bold my-5 md:text-4xl">I'm Rami Ashqar</div>Front End Developer
             </div>
             <div
-                class="hero-image-container md:translate-x-[9rem] md:z-[-1] md:translate-y-20 xl:translate-y-0 2xl:-translate-y-28">
+                class="hero-image-container md:translate-x-[9rem] md:z-[-1] md:-translate-y-5 xl:-translate-y-24 2xl:-translate-y-64 2xl:translate-x-[18rem]">
                 <div
                     class="bg-yellow-500 rotate-45 w-48 h-48 justify-center mt-16 md:w-[25rem] md:h-[29rem] md:rotate-[67deg] md:translate-x-12 md:-translate-y-72 lg:w-[29rem] lg:h-[33rem] xl:h-[43rem] 2xl:h-[72rem] 2xl:w-[38rem] dark:bg-dark-yellow">
                     <img class="-rotate-45 md:rotate-[293deg] md:w-80 md:h-80 md:translate-x-12 md:translate-y-[14rem] lg:w-[25rem] lg:h-[25rem] lg:translate-x-[3.9rem] xl:translate-y-[24rem] 2xl:translate-x-[4.5rem] 2xl:translate-y-[49rem] 2xl:w-[30rem] 2xl:h-[30rem]"
-                        src="assets/images/hero.png" alt="Picture of myself">
+                        src="assets/images/hero.jpg" alt="Picture of myself">
                 </div>
             </div>
-            <a class="md:absolute md:bottom-[7%]" href="#about">
+
+            <!-- ///// DOWN ARROW -->
+            <a class="md:absolute md:bottom-[24%] xl:bottom-[36%]" href="#about">
                 <svg id="down-arr" class="is-dark" width="24" height="24" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path d="M6 9l6 6 6-6" stroke="#90ADC6" stroke-width="2" stroke-linecap="round"
@@ -119,13 +123,12 @@
 
     <!-- ///////////////   ABOUT   //////////////// -->
     <section id="about"
-        class="text-center mt-16 font-sans w-11/12 m-auto relative justify-center items-center flex flex-col md:text-left xl:mt-24 2xl:mt-32">
+        class="text-center mt-16 font-sans w-11/12 m-auto relative justify-center items-center flex flex-col md:text-left md:-mt-10 xl:-mt-24">
         <div
-            class="container max-w-[475px] sm:max-w-[620px] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw] 2xl:max-w-[66vw]">
+            class="container max-w-[88vw] sm:max-w-[70vw] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw] 2xl:max-w-[66vw]">
             <h2
                 class="text-2xl text-blue-400 uppercase font-extrabold md:text-3xl md:text-blue-500 2xl:text-4xl dark:text-dark-blue1">
-                About
-                Me</h2>
+                About Me</h2>
             <h3
                 class="mt-5 mx-1 text-center text-teal-600 text-lg font-semibold md:text-xl md:text-left 2xl:text-2xl dark:text-dark-teal">
                 I work closely with you to make your vision come to life
@@ -160,7 +163,7 @@
     <article id="skills"
         class="bg-gray-500 text-center mt-16 font-sans m-auto p-5 justify-center items-center flex flex-col md:mt-24 md:text-left md:pb-16 xl:mt-24 xl:pb-24 2xl:mt-32 dark:bg-dark-blue2">
         <div
-            class="container max-w-[475px] sm:max-w-[620px] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw] 2xl:max-w-[66vw]">
+            class="container max-w-[88vw] sm:max-w-[70vw] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw] 2xl:max-w-[66vw]">
             <h2
                 class="text-2xl text-blue-400 uppercase font-extrabold mt-5 md:text-3xl md:text-blue-500 xl:mt-16 2xl:text-4xl dark:text-dark-blue1">
                 Skills</h2>
@@ -211,7 +214,7 @@
                 </div>
             </div>
             <div
-                class="text-center font-sans text-sm text-teal-700 font-bold mt-11 md:mt-16 md:text-base md:font-semibold md:text-teal-300 dark:text-dark-teal">
+                class="text-center font-sans text-sm text-teal-700 font-bold mt-11 md:mt-16 md:text-base md:font-semibold md:text-teal-300 2xl:text-xl dark:text-dark-teal">
                 * I was Nominated for Upwork Skill Certification in JavaScript
             </div>
         </div>
@@ -219,17 +222,17 @@
 
     <!-- ///////////    MY WORK     ////////////// -->
     <main id="work"
-        class="flex flex-col justify-center items-center text-center mt-12 font-sans m-auto p-5 md:mt-24 md:text-left">
-        <div class="container max-w-[475px] sm:max-w-[620px] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
+        class="flex flex-col justify-center items-center text-center mt-12 font-sans m-auto p-5 md:mt-24 md:text-lef 2xl:mt-32">
+        <div class="container max-w-[88vw] sm:max-w-[70vw] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
             <h2
-                class="text-2xl text-blue-400 uppercase font-extrabold mt-5 md:text-3xl md:text-blue-500 dark:text-dark-blue1">
+                class="text-2xl text-blue-400 uppercase font-extrabold mt-5 md:text-3xl md:text-blue-500 md:text-left dark:text-dark-blue1 2xl:text-4xl">
                 My Work</h2>
             <h3
-                class="mt-5 mx-1 text-center text-teal-600 text-lg font-semibold md:text-xl md:text-left dark:text-dark-teal">
+                class="mt-5 mx-1 text-center text-teal-600 text-lg font-semibold md:text-xl md:text-left dark:text-dark-teal 2xl:text-2xl">
                 Modern Design, Clean Code, Maintainable
             </h3>
             <div class="flex flex-col justify-center mt-4 ">
-                <div class="flex flex-row justify-between items-center mt-4 md:mt-12">
+                <div class="flex flex-row justify-between items-center mt-4 md:mt-12 md:text-left">
                     <a href="#!" title="Visit Unique Lands" class="relative">
                         <img class="md:w-72" src="assets/images/uniquelands.png" alt="unique lands co. website"
                             target="_blank">
@@ -240,12 +243,13 @@
                                 stroke="#EDEEF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <div class="description hidden md:block md:w-[32rem] md:ml-4">
-                        <h4 class="font-bold dark:text-dark-blue1">uniquelands CO.</h4>
-                        <p class="text-blue-800 dark:text-dark-blue1">
+                    <div class="description hidden md:block md:w-[32rem] md:ml-4 2xl:w-[44rem]">
+                        <h4 class="font-bold dark:text-dark-blue1 2xl:text-2xl 2xl:leading-loose">uniquelands CO.</h4>
+                        <p class="text-blue-800 dark:text-dark-blue1 2xl:text-xl 2xl:leading-relaxed">
                             A website was built with MaterializeCSS for a company working in tourism and MICE business
                             located in Palestine.
-                        <p class="text-gray-800 dark:text-dark-teal">Unfortunately, due to COVID-19, the company had to
+                        <p class="text-gray-800 dark:text-dark-teal 2xl:text-xl 2xl:leading-relaxed">Unfortunately, due
+                            to COVID-19, the company had to
                             close in late 2020.
                         </p>
                         </p>
@@ -262,12 +266,13 @@
                                 stroke="#EDEEF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <div class="description hidden md:block md:w-[32rem] md:ml-4">
-                        <h4 class="font-bold dark:text-dark-blue1">Travel Site</h4>
-                        <p class="text-blue-800 dark:text-dark-blue1">
+                    <div class="description hidden md:block md:w-[32rem] md:ml-4 md:text-left 2xl:w-[44rem]">
+                        <h4 class="font-bold dark:text-dark-blue1 2xl:text-2xl">Travel Site</h4>
+                        <p class="text-blue-800 dark:text-dark-blue1 2xl:text-xl 2xl:leading-relaxed">
                             A template website of a travel agency was built with PostCSS, Sprites and jQuery; at that
                             time, I don't use jQuery these days.
-                        <p class="text-gray-800 dark:text-dark-teal">The design and most of the code are as taught by
+                        <p class="text-gray-800 dark:text-dark-teal 2xl:text-xl 2xl:leading-relaxed">The design and most
+                            of the code are as taught by
                             Instructor Brad
                             Schiff.</p>
                         </p>
@@ -283,17 +288,19 @@
                                 stroke="#EDEEF0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </a>
-                    <div class="description hidden md:block md:w-[32rem] md:ml-4">
-                        <h4 class="font-bold dark:text-dark-blue1">Natours Agency</h4>
-                        <p class="text-blue-800 dark:text-dark-blue1">
+                    <div class="description hidden md:block md:w-[32rem] md:ml-4 md:text-left 2xl:w-[44rem]">
+                        <h4 class="font-bold dark:text-dark-blue1 2xl:text-2xl 2xl:leading-relaxed">Natours Agency</h4>
+                        <p class="text-blue-800 dark:text-dark-blue1 2xl:text-xl 2xl:leading-relaxed">
                             Another template website of a travel agency was built with pure CSS3 using sass as
                             preprocessor and npm scripts.
-                        <p class="text-gray-800 dark:text-dark-teal">The design and code are as taught by Instructor
+                        <p class="text-gray-800 dark:text-dark-teal 2xl:text-xl 2xl:leading-relaxed">The design and code
+                            are as taught by Instructor
                             Jonas Schmedtmann.</p>
                         </p>
                     </div>
                 </div>
-                <p class="font-sans font-semibold text-xl mt-8 text-center md:mt-16 md:text-2xl dark:text-dark-blue1">
+                <p
+                    class="font-sans font-semibold text-xl mt-8 text-center md:mt-16 md:text-2xl 2xl:text-3xl dark:text-dark-blue1">
                     View More</p>
             </div>
         </div>
@@ -302,19 +309,20 @@
 
     <!-- ///////////    TESTIMONIALS     ////////////// -->
     <article id="testemonials"
-        class="flex flex-col justify-center items-center text-center mt-12 font-sans m-auto p-5 relative md:mt-24 md:text-left md:pb-24">
-        <div class="container max-w-[475px] sm:max-w-[620px] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
+        class="flex flex-col justify-center items-center text-center mt-12 font-sans m-auto p-5 relative md:mt-24 md:text-left md:pb-24 2xl:mt-32">
+        <div class="container max-w-[88vw] sm:max-w-[70vw] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
             <h2
-                class="text-2xl text-blue-400 uppercase font-extrabold mt-5 md:text-3xl md:text-blue-500 dark:text-dark-blue1">
+                class="text-2xl text-blue-400 uppercase font-extrabold mt-5 md:text-3xl md:text-blue-500 2xl:text-4xl dark:text-dark-blue1">
                 Testimonials
             </h2>
             <h3
-                class="mt-5 mx-1 text-center text-teal-600 text-lg font-semibold md:text-xl md:text-left dark:text-dark-teal">
+                class="mt-5 mx-1 text-center text-teal-600 text-lg font-semibold md:text-xl md:text-left 2xl:text-2xl dark:text-dark-teal">
                 Raising Talent then 100% Job Success Rate on Upwork
             </h3>
             <div class="flex flex-col justify-between items-center mt-4 md:flex-row md:items-baseline">
-                <div class="flex flex-col md:w-[40%]">
-                    <p class="mt-7 font-sans font-normal text-base md:flex flex-col dark:text-dark-blue1">
+                <div class="flex flex-col md:w-[40%] 2xl:text-xl 2xl:leading-relaxed">
+                    <p
+                        class="mt-7 font-sans font-normal text-base md:flex flex-col 2xl:text-xl 2xl:leading-relaxed dark:text-dark-blue1">
                         <q>Rami is amazing. He takes the time to understand exactly what needs to get done, then sprints
                             to
                             finish the work. All
@@ -325,8 +333,9 @@
                     </p>
                     <p class="font-sans font-bold mt-1 dark:text-dark-blue1">- Karthik Raman, Upwork</p>
                 </div>
-                <div class="flex flex-col md:w-[35%] md:ml-4">
-                    <p class="mt-11 font-sans font-normal text-base dark:text-dark-blue1">
+                <div class="flex flex-col md:w-[35%] md:ml-4 2xl:text-xl 2xl:leading-relaxed">
+                    <p
+                        class="mt-11 font-sans font-normal text-base 2xl:text-xl 2xl:leading-relaxed dark:text-dark-blue1">
                         <q>Rami did a great job, he optimised our landing page from score 80 up to 98 % on google. he
                             keep
                             updating until we
@@ -336,8 +345,9 @@
                     </p>
                     <p class="font-sans font-bold mt-1 dark:text-dark-blue1">- George Rizqallah, Upwork</p>
                 </div>
-                <div class="flex flex-col md:w-[25%] md:ml-4">
-                    <p class="mt-11 font-sans font-normal text-base dark:text-dark-blue1">
+                <div class="flex flex-col md:w-[25%] md:ml-4 2xl:text-xl 2xl:leading-relaxed">
+                    <p
+                        class="mt-11 font-sans font-normal text-base 2xl:text-xl 2xl:leading-relaxed dark:text-dark-blue1">
                         <q>Rami has done an outstanding job and has taken many extra miles! He is highly recommended and
                             trustworthy and I would be
                             delighted to work with him again!</q>
@@ -370,27 +380,32 @@
 
     <!-- ///////////    CONTACT ME     ////////////// -->
     <article id="contact"
-        class="flex flex-col justify-center items-center text-center mt-12 font-sans m-auto p-5 bg-blue-500 md:mt-24 md:text-left md:pb-24 md:relative md:z-10 dark:bg-dark-yellow">
-        <div class="container max-w-[475px] sm:max-w-[620px] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
-            <h2 class="text-2xl text-gray-500 uppercase font-extrabold mt-5 md:text-3xl md:mt-10 dark:text-dark-blue1">
+        class="flex flex-col justify-center items-center text-center mt-12 font-sans m-auto p-5 bg-blue-500 md:mt-24 md:text-left md:pb-24 md:relative md:z-10 dark:bg-dark-yellow 2xl:mt-32">
+        <div class="container max-w-[88vw] sm:max-w-[70vw] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
+            <h2
+                class="text-2xl text-gray-500 uppercase font-extrabold mt-5 md:text-3xl md:mt-10 2xl:text-4xl 2xl:mt-32 dark:text-dark-blue1">
                 Contact Me</h2>
             <h3
-                class="mt-5 mx-1 text-center text-yellow-500 text-lg font-semibold md:text-xl md:text-left dark:text-dark-teal">
+                class="mt-5 mx-1 text-center text-yellow-500 text-lg font-semibold md:text-xl md:text-left 2xl:text-2xl dark:text-dark-teal">
                 Let’s Make Something Special Together
             </h3>
-            <form action="post"
+            <form action="https://formsubmit.co/ramiashqar@yahoo.com" method="POST"
                 class="flex flex-col justify-center items-center md:mt-12 md:justify-start md:items-start md:z-10">
                 <input
-                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2"
+                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 2xl:text-xl 2xl:p-5"
                     type="text" name="name" id="name" placeholder="Your Name Here">
                 <input
-                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2"
+                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 2xl:text-xl 2xl:p-5"
                     type="email" name="email" id="email" placeholder="Your Email Here">
+                    <input type="hidden" name="_next" value="http://localhost:8080/thanks.html">
+                    <input type="hidden" name="_subject" value="ramiashqar.me submission !!">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
                 <textarea
-                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2"
+                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 2xl:text-xl 2xl:p-5"
                     name="message" id="message" cols="30" rows="10" placeholder="Your Message Here"></textarea>
-                <button
-                    class="uppercase mt-5 bg-yellow-500 text-blue-600 font-bold text-base py-4 px-8 md:mt-10 md:font-black md:z-10 dark:bg-dark-blue2 dark:text-dark-blue1"
+                <button id="submit"
+                    class="uppercase mt-5 bg-yellow-500 text-blue-600 font-bold text-base py-4 px-8 md:mt-10 md:font-black md:z-10 dark:bg-dark-blue2 dark:text-dark-blue1 2xl:text-xl 2xl:px-10 2xl:py-5"
                     type="submit">Send Email</button>
             </form>
             <div class="hidden contact-bg md:absolute md:z-[0] md:bottom-1 md:block md:right-1 md:opacity-90">
@@ -473,8 +488,8 @@
     <footer id="footer"
         class="flex flex-col justify-center items-center text-center pt-12 font-sans m-auto p-5 bg-gray-500 md:pt-16 dark:bg-dark-blue2">
         <div
-            class="container flex justify-center items-center max-w-[475px] sm:max-w-[620px] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
-            <a href="#!" title="twitter account" class="">
+            class="container flex justify-center items-center max-w-[88vw] sm:max-w-[70vw] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
+            <a href="https://twitter.com/rgashqar" title="Follow me on Twitter" target="_blank" class="">
                 <svg class="w-8 h-8 stroke-[4px] lg:w-10 lg:h-10 social-icns" viewBox="0 0 44 44" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
@@ -489,7 +504,7 @@
                     </defs>
                 </svg>
             </a>
-            <a href="#!" title="Linkden account" class="ml-6 w-8 h-8 stroke-[4px] md:ml-10 lg:w-10 lg:h-10 ">
+            <a href="https://www.linkedin.com/in/rami-ashqar/" title="Contact me on Linkden" target="_blank" class="ml-6 w-8 h-8 stroke-[4px] md:ml-10 lg:w-10 lg:h-10 ">
                 <svg class="social-icns" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M29.3333 14.6665C32.2507 14.6665 35.0486 15.8254 37.1115 17.8883C39.1744 19.9512 40.3333 22.7491 40.3333 25.6665V38.4998H33V25.6665C33 24.694 32.6137 23.7614 31.9261 23.0738C31.2384 22.3861 30.3058 21.9998 29.3333 21.9998C28.3609 21.9998 27.4282 22.3861 26.7406 23.0738C26.053 23.7614 25.6667 24.694 25.6667 25.6665V38.4998H18.3333V25.6665C18.3333 22.7491 19.4923 19.9512 21.5552 17.8883C23.6181 15.8254 26.416 14.6665 29.3333 14.6665V14.6665Z"
@@ -501,7 +516,7 @@
                         stroke="#333652" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </a>
-            <a href="#!" title="github account" class="ml-6 w-8 h-8 stroke-[4px] md:ml-10 lg:w-10 lg:h-10 ">
+            <a href="https://github.com/Ramiashqar" title="Star me on Github" target="_blank" class="ml-6 w-8 h-8 stroke-[4px] md:ml-10 lg:w-10 lg:h-10 ">
                 <svg class="social-icns" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0)">
                         <path
@@ -516,7 +531,7 @@
                 </svg>
             </a>
 
-            <a href="#!" class="ml-6 w-8 h-8 stroke-[4px] md:ml-10 lg:w-10 lg:h-10">
+            <a href="mailto:ramiashqar@yahoo.com" title="Send me an Email" target="_blank"  class="ml-6 w-8 h-8 stroke-[4px] md:ml-10 lg:w-10 lg:h-10">
                 <svg class="social-icns" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M7.33333 7.3335H36.6667C38.6833 7.3335 40.3333 8.9835 40.3333 11.0002V33.0002C40.3333 35.0168 38.6833 36.6668 36.6667 36.6668H7.33333C5.31666 36.6668 3.66666 35.0168 3.66666 33.0002V11.0002C3.66666 8.9835 5.31666 7.3335 7.33333 7.3335Z"
