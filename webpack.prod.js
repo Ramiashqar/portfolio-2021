@@ -3,7 +3,7 @@ const glob = require("glob-all")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
-const PurgeCSSPlugin = require("purgecss-webpack-plugin")
+// const PurgeCSSPlugin = require("purgecss-webpack-plugin")
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
 const CompressionPlugin = require("compression-webpack-plugin")
@@ -41,7 +41,7 @@ module.exports = {
           globOptions: {
             ignore: ["*.DS_Store"],
           },
-          noErrorOnMissing: true,
+          noErrorOnMissing: false,
         },
       ],
     }),
@@ -71,7 +71,7 @@ module.exports = {
     maxEntrypointSize: 512000,
     maxAssetSize: 512000,
     assetFilter: function (assetFilename) {
-      return assetFilename.endsWith(".js" || ".html" || ".css")
+      return assetFilename.endsWith(".js" || ".html" || ".css" || ".ttf")
     },
   },
 

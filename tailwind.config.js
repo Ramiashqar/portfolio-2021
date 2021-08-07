@@ -59,8 +59,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["Karla"],
-      serif: ["STIX Two Text"],
+      sans: ["Karla", "sans-serif"],
+      serif: ["STIX Two Text", "serif"],
     },
     extend: {},
   },

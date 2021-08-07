@@ -26,6 +26,7 @@ html {
   font-weight: 1 999;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Karla";
   src: url("assets/fonts/Karla-VariableFont_wght.ttf");
@@ -33,6 +34,7 @@ html {
   font-weight: 1 999;
   font-style: normal;
 }
+
 input,
 textarea {
   box-shadow: 0 35px 35px -15px rgba(0, 0, 0, 0.25),
@@ -40,6 +42,7 @@ textarea {
 }
 
 @media (min-width: 768px) {
+
   input,
   textarea {
     box-shadow: 0 35px 35px -15px rgba(0, 0, 0, 0.35),
@@ -53,6 +56,7 @@ textarea {
       fill: #fff;
     }
   }
+
   .nav-icn {
     svg {
       rect {
@@ -60,11 +64,13 @@ textarea {
       }
     }
   }
+
   .is-dark {
     path {
       stroke: #818181;
     }
   }
+
   .dark-quote {
     path {
       fill: #3d3d3d;
@@ -75,21 +81,26 @@ textarea {
     .dark-gray {
       fill: #818181;
     }
+
     .dark-black {
       fill: #212124;
     }
+
     .black-black {
       fill: #161618;
     }
   }
+
   .social-icns {
     path {
       stroke: #818181;
     }
   }
+
   #nav-content {
     background-color: #181818 !important;
   }
+
   @media (min-width: 768px) {
     #nav-content {
       background-color: transparent !important;
@@ -104,6 +115,7 @@ textarea {
       x: 10;
     }
   }
+
   .nav-bar-bottom {
     rect {
       width: 40px;
