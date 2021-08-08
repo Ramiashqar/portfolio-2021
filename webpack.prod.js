@@ -8,6 +8,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
 const CompressionPlugin = require("compression-webpack-plugin")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
+const CnameWebpackPlugin = require("cname-webpack-plugin")
 // const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin")
 
 const PATHS = {
@@ -71,6 +72,9 @@ module.exports = {
       algorithm: "brotliCompress",
       test: /\.(js|css|html|svg)$/,
       minRatio: 0.3,
+    }),
+    new CnameWebpackPlugin({
+      domain: "ramiashqar.me",
     }),
     // new ImageminWebpWebpackPlugin({
     //   config: [
