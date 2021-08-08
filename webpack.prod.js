@@ -53,6 +53,13 @@ module.exports = {
       minify: true,
       scriptLoading: "defer",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/thanks.html",
+      filename: "thanks.html",
+      inject: true,
+      minify: true,
+      scriptLoading: "defer",
+    }),
     new CompressionPlugin({
       filename: "[path][base].gz",
       algorithm: "gzip",

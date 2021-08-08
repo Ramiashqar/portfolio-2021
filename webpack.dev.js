@@ -18,6 +18,14 @@ module.exports = {
       scriptLoading: "defer",
       favicon: "./src/assets/favi/logo.svg",
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/thanks.html",
+      filename: "thanks.html",
+      inject: true,
+      minify: true,
+      scriptLoading: "defer",
+      favicon: "./src/assets/favi/logo.svg",
+    }),
   ],
 
   devtool: "source-map",
