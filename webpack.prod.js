@@ -8,6 +8,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
 const TerserPlugin = require("terser-webpack-plugin")
 const CompressionPlugin = require("compression-webpack-plugin")
 const CopyWebpackPlugin = require("copy-webpack-plugin")
+// const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin")
 
 const PATHS = {
   src: path.join(__dirname, "src"),
@@ -64,6 +65,20 @@ module.exports = {
       test: /\.(js|css|html|svg)$/,
       minRatio: 0.3,
     }),
+    // new ImageminWebpWebpackPlugin({
+    //   config: [
+    //     {
+    //       test: /\.(jpe?g|png)/,
+    //       options: {
+    //         quality: 85,
+    //       },
+    //     },
+    //   ],
+    //   overrideExtension: true,
+    //   detailedLogs: false,
+    //   silent: false,
+    //   strict: true,
+    // }),
   ],
 
   performance: {
@@ -124,6 +139,18 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      // // Fonts and SVGs: Inline files
+      // {
+      //   test: /\.(woff(2)?|eot|ttf|otf|svg|)$/i,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "assets/fonts/[name].[ext]",
+      //       },
+      //     },
+      //   ],
+      // },
       {
         test: /\.(s[ac]|c)ss$/i,
         use: [
@@ -141,19 +168,6 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "assets/images/[name].[ext]",
-            },
-          },
-        ],
-      },
-
-      // Fonts and SVGs: Inline files
-      {
-        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "assets/fonts/[name].[ext]",
             },
           },
         ],

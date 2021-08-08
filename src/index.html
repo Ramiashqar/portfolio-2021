@@ -66,20 +66,25 @@
                 <ul id="nav-content"
                     class="hidden flex flex-col fixed top-0 left-0 z-50 bg-yellow-500 w-full h-full justify-around items-center text-2xl font-black py-16 md:flex md:relative md:flex-row md:text-base  md:justify-evenly md:items-center md:font-semibold md:w-[65vw] md:h-10 md:bg-transparent md:text-blue-500 lg:w-[65vw] lg:uppercase lg:font-bold xl:w-[70vw] xl:text-lg 2xl:text-xl dark:text-dark-blue1">
                     <li class="nav-content-item">
-                        <a href="#about">About Me</a>
+                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-125 hover:outline-none hover:border-2 hover:p-2 hover:ring-2 hover:ring-yellow-300 dark:hover:ring-dark-teal focus:tracking-wide focus:scale-125 focus:outline-none focus:border-2 focus:p-2 focus:ring-2 focus:ring-yellow-300 dark:focus:ring-dark-teal"
+                            href="#about">About Me</a>
                     </li>
                     <li class="nav-content-item">
-                        <a href="#skills">Skills</a>
+                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-125 hover:outline-none hover:border-2 hover:p-2 hover:ring-2 hover:ring-yellow-300 dark:hover:ring-dark-teal focus:tracking-wide focus:scale-125 focus:outline-none focus:border-2 focus:p-2 focus:ring-2 focus:ring-yellow-300 dark:focus:ring-dark-teal"
+                            href="#skills">Skills</a>
                     </li>
                     <li class="nav-content-item">
-                        <a href="#work">My Work</a>
+                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-125 hover:outline-none hover:border-2 hover:p-2 hover:ring-2 hover:ring-yellow-300 dark:hover:ring-dark-teal focus:tracking-wide focus:scale-125 focus:outline-none focus:border-2 focus:p-2 focus:ring-2 focus:ring-yellow-300 dark:focus:ring-dark-teal"
+                            href="#work">My Work</a>
                     </li>
                     <li class="nav-content-item">
-                        <a href="#testemonials">Testimonials</a>
+                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-125 hover:outline-none hover:border-2 hover:p-2 hover:ring-2 hover:ring-yellow-300 dark:hover:ring-dark-teal focus:tracking-wide focus:scale-125 focus:outline-none focus:border-2 focus:p-2 focus:ring-2 focus:ring-yellow-300 dark:focus:ring-dark-teal"
+                            href="#testemonials">Testimonials</a>
                     </li>
                     <li
-                        class="bg-blue-500 text-gray-500 px-12 py-6 md:px-4 md:py-2 xl:px-8 xl:py-[18px] 2xl:px-10 2xl:py-5 dark:bg-dark-blue2 nav-content-item">
-                        <a href="#contact">Contact Me</a>
+                        class="bg-blue-500 text-gray-500 px-12 py-6 md:px-4 md:py-2 xl:px-8 xl:py-[18px] 2xl:px-10 2xl:py-5 dark:bg-dark-blue2 nav-content-item dark:hover:bg-dark-bg">
+                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-150 focus:tracking-wide focus:scale-125 focus:outline-none focus:text-dark-teal"
+                            href="#contact">Contact Me</a>
                     </li>
                 </ul>
                 <a id="nav-icn" class="ml-2 md:hidden nav-icn open z-50" href="#!" title="Open Menu">
@@ -105,8 +110,16 @@
                 class="hero-image-container md:translate-x-[9rem] md:z-[-1] md:-translate-y-5 xl:-translate-y-24 2xl:-translate-y-64 2xl:translate-x-[18rem]">
                 <div
                     class="bg-yellow-500 rotate-45 w-48 h-48 justify-center mt-16 md:w-[25rem] md:h-[29rem] md:rotate-[67deg] md:translate-x-12 md:-translate-y-72 lg:w-[29rem] lg:h-[33rem] xl:h-[43rem] 2xl:h-[72rem] 2xl:w-[38rem] dark:bg-dark-yellow">
-                    <img class="-rotate-45 md:rotate-[293deg] md:w-80 md:h-80 md:translate-x-12 md:translate-y-[14rem] lg:w-[25rem] lg:h-[25rem] lg:translate-x-[3.9rem] xl:translate-y-[24rem] 2xl:translate-x-[4.5rem] 2xl:translate-y-[49rem] 2xl:w-[30rem] 2xl:h-[30rem]"
-                        src="assets/images/hero.jpg" alt="Picture of myself">
+                    <picture
+                        class="dark:hidden -rotate-45 md:rotate-[293deg] md:w-80 md:h-80 md:translate-x-12 md:translate-y-[14rem] lg:w-[25rem] lg:h-[25rem] lg:translate-x-[3.9rem] xl:translate-y-[24rem] 2xl:translate-x-[4.5rem] 2xl:translate-y-[49rem] 2xl:w-[30rem] 2xl:h-[30rem]">
+                        <source srcset="assets/images/hero-light.webp" type="image/webp">
+                        <img src="assets/images/hero-light.jpeg" alt="Picture of myself">
+                    </picture>
+                    <picture
+                        class="hidden dark:block -rotate-45 md:rotate-[293deg] md:w-80 md:h-80 md:translate-x-12 md:translate-y-[14rem] lg:w-[25rem] lg:h-[25rem] lg:translate-x-[3.9rem] xl:translate-y-[24rem] 2xl:translate-x-[4.5rem] 2xl:translate-y-[49rem] 2xl:w-[30rem] 2xl:h-[30rem]">
+                        <source srcset="assets/images/hero-dark.webp" type="image/webp">
+                        <img src="assets/images/hero-dark.jpeg" alt="Picture of myself">
+                    </picture>
                 </div>
             </div>
 
@@ -223,7 +236,7 @@
     <!-- ///////////    MY WORK     ////////////// -->
     <main id="work"
         class="flex flex-col justify-center items-center text-center mt-12 font-sans m-auto p-5 md:mt-24 md:text-lef 2xl:mt-32">
-        <div class="container max-w-[88vw] sm:max-w-[70vw] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
+        <div class="container max-w-[75vw] sm:max-w-[70vw] md:max-w-[88vw] lg:max-w-[80vw] xl:max-w-[70vw]">
             <h2
                 class="text-2xl text-blue-400 uppercase font-extrabold mt-5 md:text-3xl md:text-blue-500 md:text-left dark:text-dark-blue1 2xl:text-4xl">
                 My Work</h2>
@@ -234,7 +247,10 @@
             <div class="flex flex-col justify-center mt-4 ">
                 <div class="flex flex-row justify-between items-center mt-4 md:mt-12 md:text-left">
                     <a href="#!" title="Visit Unique Lands" class="relative" target="_blank">
-                        <img class="md:w-72" src="assets/images/uniquelands.png" alt="unique lands co. website">
+                        <picture class="md:w-72">
+                            <source srcset="assets/images/uniquelands.webp" type="image/webp">
+                            <img src="assets/images/uniquelands.png" alt="unique lands co. website">
+                        </picture>
                         <svg class="absolute bottom-2 right-2" width="16" height="16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -257,7 +273,10 @@
                 </div>
                 <div class="flex flex-row justify-between items-center mt-4 md:mt-12">
                     <a href="#!" title="Visit Travel Site" class="relative" target="_blank">
-                        <img class="md:w-72" src="assets/images/Travel-Site.png" alt="travel site template">
+                        <picture class="md:w-72">
+                            <source srcset="assets/images/Travel-Site.webp" type="image/webp">
+                            <img src="assets/images/Travel-Site.png" alt="travel site template">
+                        </picture>
                         <svg class="absolute bottom-2 right-2" width="16" height="16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -281,7 +300,10 @@
                 </div>
                 <div class="flex flex-row justify-between items-center mt-4 md:mt-12">
                     <a href="#!" title="Visit Natours Agency" target="_blank" class="relative">
-                        <img class="md:w-72" src="assets/images/Natours.png" alt="Natours Agency site template">
+                        <picture class="md:w-72">
+                            <source srcset="assets/images/Natours.webp" type="image/webp">
+                            <img src="assets/images/Natours.png" alt="Natours Agency site template">
+                        </picture>
                         <svg class="absolute bottom-2 right-2" width="16" height="16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
