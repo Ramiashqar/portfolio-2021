@@ -42,8 +42,7 @@ textarea {
   box-shadow: 0 35px 35px -15px rgba(0, 0, 0, 0.25),
     inset 0 2px 3px 0.5px rgba(#000, 0.1);
   &:hover,
-  &:focus,
-  &:active {
+  &:focu {
     outline: none;
     box-shadow: 0px 0px 35px 4px rgba(#fad02c, 0.25),
       inset 0 2px 3px 0.5px rgba(#000, 0.1);
@@ -128,8 +127,7 @@ textarea {
 
   .cta {
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       box-shadow: 0px 0px 35px 4px rgba(#818181, 0.25),
         inset 0 2px 3px 0.5px rgba(#000, 0.1) !important;
     }
@@ -138,8 +136,7 @@ textarea {
   input,
   textarea {
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       outline: none;
       box-shadow: 0px 0px 35px 4px rgba(#818181, 0.25),
         inset 0 2px 3px 0.5px rgba(#000, 0.1);
@@ -152,8 +149,7 @@ textarea {
   #footer {
     a {
       &:hover,
-      &:focus,
-      &:active {
+      &:focus {
         svg {
           path {
             fill: #818181;
@@ -164,12 +160,21 @@ textarea {
       }
     }
   }
-  picture {
-    &:hover {
-      & + svg {
+  a.relative {
+    &:hover,
+    &:focus {
+      picture + svg {
         path {
           stroke: #fad02c;
         }
+      }
+    }
+  }
+  a.top-arr {
+    --glass-lightness: 0%;
+    svg{
+      path{
+        stroke: #fff;
       }
     }
   }
@@ -198,8 +203,7 @@ textarea {
     }
   }
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     outline: none;
     svg {
       path {
@@ -229,8 +233,7 @@ textarea {
       transition: all 0.3s $transition-1;
     }
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       transform: scale(1.15);
       letter-spacing: 0.1rem;
       outline: none;
@@ -244,8 +247,8 @@ textarea {
 .cta {
   transition: all 0.3s $transition-1;
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
+    outline: none;
     transform: scale(1.15);
     letter-spacing: 0.1rem;
     box-shadow: 0px 0px 35px 4px rgba(#fad02c, 0.25),
@@ -260,8 +263,7 @@ textarea {
     }
   }
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     outline: none;
     transform: rotate(360deg);
     svg {
@@ -280,8 +282,7 @@ textarea {
       }
     }
     &:hover,
-    &:focus,
-    &:active {
+    &:focus {
       svg {
         path {
           fill: #333652;
@@ -292,25 +293,67 @@ textarea {
     }
   }
 }
-
-picture img {
-  transition: all 0.3s $transition-1;
-  &:hover, :focus, &:active {
-    transform: scale(1.1);
-  }
-}
-picture {
-  & + svg {
-    transition: all 0.3s $transition-1;
-    opacity: 0;
-  }
-  &:hover, :focus, &:active{
-    & + svg {
+a.relative {
+  outline: none;
+  &:hover,
+  &:focus {
+    picture + svg {
       opacity: 1 !important;
       transform: scale(4) translateX(100%);
       path {
         stroke: #333652;
       }
     }
+    picture img {
+      transform: scale(1.1);
+    }
   }
+}
+picture img {
+  transition: all 0.3s $transition-1;
+}
+picture {
+  & + svg {
+    transition: all 0.3s $transition-1;
+    opacity: 0;
+  }
+}
+
+a.top-arr {
+  --glass-lightness: 100%,
+  display: block;
+  position: fixed;
+  background-color: #fff;
+  background: hsl(0 0% var(--glass-lightness)/50%);
+  backdrop-filter: blur(40px);
+  bottom: 5%;
+  right: 10%;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 1000;
+  transition: all .3s $transition-1;
+  opacity: .6;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    path{
+    stroke: #A4881D;
+  }
+  }
+  &:hover, &:focus{
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  @media (max-width: 768px) {
+bottom: 3%;
+  right: 5%;
+}
+}
+.hide-me{
+  opacity: 0 !important;
 }

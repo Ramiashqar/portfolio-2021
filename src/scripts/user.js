@@ -1,3 +1,4 @@
+import ScrollMagic from "./ScrollMagic.min"
 // DARK MODE FUNCTIONALITY
 document.addEventListener("DOMContentLoaded", () => {
   const htmlTag = document.getElementById("html")
@@ -62,4 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
       navFunction()
     })
   })
+
+  // SCROLL MAGIC
+  const controller = new ScrollMagic.Controller()
+
+  const scene = new ScrollMagic.Scene({
+    triggerElement: "#hero",
+    triggerHook: 0.9,
+    duration: "80%",
+    offset: 50,
+  })
+    .setClassToggle(".top-arr", "hide-me")
+    .addTo(controller)
 })

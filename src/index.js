@@ -12,3 +12,4 @@ import "./scripts/user"
 // FIXME:
 //  [] Fix This
 //  [X] Make Dark mode for svg coloring buu JS not tailwindCSS
+//  [] Add selection colors
