@@ -16,6 +16,7 @@
 // @import "utilities";
 // @import "common";
 
+$transition-1: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 html {
   scroll-behavior: smooth;
 }
@@ -37,12 +38,22 @@ html {
 
 input,
 textarea {
+  transition: all 0.3s $transition-1;
   box-shadow: 0 35px 35px -15px rgba(0, 0, 0, 0.25),
     inset 0 2px 3px 0.5px rgba(#000, 0.1);
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: 0px 0px 35px 4px rgba(#fad02c, 0.25),
+      inset 0 2px 3px 0.5px rgba(#000, 0.1);
+    &::placeholder {
+      color: #818181 !important;
+    }
+  }
 }
 
 @media (min-width: 768px) {
-
   input,
   textarea {
     box-shadow: 0 35px 35px -15px rgba(0, 0, 0, 0.35),
@@ -106,6 +117,62 @@ textarea {
       background-color: transparent !important;
     }
   }
+
+  .nav-content-item {
+    a {
+      &::before {
+        border-bottom: 4px solid #818181;
+      }
+    }
+  }
+
+  .cta {
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: 0px 0px 35px 4px rgba(#818181, 0.25),
+        inset 0 2px 3px 0.5px rgba(#000, 0.1) !important;
+    }
+  }
+
+  input,
+  textarea {
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: 0px 0px 35px 4px rgba(#818181, 0.25),
+        inset 0 2px 3px 0.5px rgba(#000, 0.1);
+      &::placeholder {
+        color: #818181 !important;
+      }
+    }
+  }
+
+  #footer {
+    a {
+      &:hover,
+      &:focus,
+      &:active {
+        svg {
+          path {
+            fill: #818181;
+            stroke: #212124;
+            stroke-width: 1px;
+          }
+        }
+      }
+    }
+  }
+  picture {
+    &:hover {
+      & + svg {
+        path {
+          stroke: #fad02c;
+        }
+      }
+    }
+  }
 }
 
 .open {
@@ -120,6 +187,130 @@ textarea {
     rect {
       width: 40px;
       x: 0;
+    }
+  }
+}
+
+.logo {
+  svg {
+    path {
+      transition: all 0.3s $transition-1;
+    }
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    svg {
+      path {
+        fill: #e1bb28;
+      }
+    }
+  }
+}
+
+.nav-content-item {
+  a {
+    display: block;
+    transition: all 0.3s $transition-1;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      display: block;
+      border-bottom: 4px solid #fad02c;
+      background-color: transparent;
+      position: absolute;
+      width: 120%;
+      height: 140%;
+      bottom: -30%;
+      left: 50%;
+      transform: translateX(-150%);
+      transition: all 0.3s $transition-1;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.15);
+      letter-spacing: 0.1rem;
+      outline: none;
+      &::before {
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
+  }
+}
+.cta {
+  transition: all 0.3s $transition-1;
+  &:hover,
+  &:focus,
+  &:active {
+    transform: scale(1.15);
+    letter-spacing: 0.1rem;
+    box-shadow: 0px 0px 35px 4px rgba(#fad02c, 0.25),
+      inset 0 2px 3px 0.5px rgba(#000, 0.1);
+  }
+}
+#dark-icn {
+  transition: all 0.3s $transition-1;
+  svg {
+    path {
+      transition: all 0.3s $transition-1;
+    }
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    transform: rotate(360deg);
+    svg {
+      path {
+        stroke-width: 3px;
+      }
+    }
+  }
+}
+#footer {
+  a {
+    outline: none;
+    svg {
+      path {
+        transition: all 0.3s $transition-1;
+      }
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      svg {
+        path {
+          fill: #333652;
+          stroke: #e9eaec;
+          stroke-width: 1px;
+        }
+      }
+    }
+  }
+}
+
+picture img {
+  transition: all 0.3s $transition-1;
+  &:hover, :focus, &:active {
+    transform: scale(1.1);
+  }
+}
+picture {
+  & + svg {
+    transition: all 0.3s $transition-1;
+    opacity: 0;
+  }
+  &:hover, :focus, &:active{
+    & + svg {
+      opacity: 1 !important;
+      transform: scale(4) translateX(100%);
+      path {
+        stroke: #333652;
+      }
     }
   }
 }

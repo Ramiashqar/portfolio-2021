@@ -43,7 +43,7 @@
     <!-- ///////////////   NAVIGATION   //////////////// -->
     <div class="nav-header-container md:max-w-[100vw] md:overflow-hidden mx-auto border-0">
         <nav id="nav" class="flex flex-nowrap flex-grow items-center flex-row justify-between mt-6">
-            <a class="ml-5 md:ml-10" href="index.html">
+            <a class="ml-5 md:ml-10 logo" href="index.html">
                 <svg id="logo-icn" class="logo-dark" width="56" height="26" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -52,10 +52,12 @@
                 </svg>
             </a>
             <div class="flex justify-center items-center mr-5 sm:mr-7">
-                <a id="dark-icn" class="" href="#!" title="Dark Mode">
-                    <svg class="dark:hidden" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79v0z" stroke="#333652" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
+                <a id="dark-icn" class="dark-icn" href="#!" title="Dark Mode">
+
+                    <svg class="dark:hidden" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21 12.79C20.8427 14.4922 20.2039 16.1144 19.1583 17.4668C18.1126 18.8192 16.7035 19.8458 15.0957 20.4265C13.4879 21.0073 11.748 21.1181 10.0795 20.7461C8.41103 20.3741 6.883 19.5345 5.67423 18.3258C4.46547 17.117 3.62595 15.589 3.25392 13.9205C2.88188 12.252 2.99272 10.5121 3.57347 8.9043C4.15421 7.29651 5.18084 5.88737 6.53322 4.84175C7.8856 3.79614 9.50781 3.15731 11.21 3C10.2134 4.34827 9.73386 6.00945 9.85854 7.68141C9.98322 9.35338 10.7039 10.9251 11.8894 12.1106C13.075 13.2961 14.6466 14.0168 16.3186 14.1415C17.9906 14.2662 19.6517 13.7866 21 12.79V12.79Z"
+                            stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <svg class="hidden dark:block" width="24" height="24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -67,25 +69,20 @@
                 <ul id="nav-content"
                     class="hidden flex flex-col fixed top-0 left-0 z-50 bg-yellow-500 w-full h-full justify-around items-center text-2xl font-black py-16 md:flex md:relative md:flex-row md:text-base  md:justify-evenly md:items-center md:font-semibold md:w-[65vw] md:h-10 md:bg-transparent md:text-blue-500 lg:w-[65vw] lg:uppercase lg:font-bold xl:w-[70vw] xl:text-lg 2xl:text-xl dark:text-dark-blue1">
                     <li class="nav-content-item">
-                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-125 hover:outline-none hover:border-2 hover:p-2 hover:ring-2 hover:ring-yellow-300 dark:hover:ring-dark-teal focus:tracking-wide focus:scale-125 focus:outline-none focus:border-2 focus:p-2 focus:ring-2 focus:ring-yellow-300 dark:focus:ring-dark-teal"
-                            href="#about">About Me</a>
+                        <a class="" href="#about">About Me</a>
                     </li>
                     <li class="nav-content-item">
-                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-125 hover:outline-none hover:border-2 hover:p-2 hover:ring-2 hover:ring-yellow-300 dark:hover:ring-dark-teal focus:tracking-wide focus:scale-125 focus:outline-none focus:border-2 focus:p-2 focus:ring-2 focus:ring-yellow-300 dark:focus:ring-dark-teal"
-                            href="#skills">Skills</a>
+                        <a class="" href="#skills">Skills</a>
                     </li>
                     <li class="nav-content-item">
-                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-125 hover:outline-none hover:border-2 hover:p-2 hover:ring-2 hover:ring-yellow-300 dark:hover:ring-dark-teal focus:tracking-wide focus:scale-125 focus:outline-none focus:border-2 focus:p-2 focus:ring-2 focus:ring-yellow-300 dark:focus:ring-dark-teal"
-                            href="#work">My Work</a>
+                        <a class="" href="#work">My Work</a>
                     </li>
                     <li class="nav-content-item">
-                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-125 hover:outline-none hover:border-2 hover:p-2 hover:ring-2 hover:ring-yellow-300 dark:hover:ring-dark-teal focus:tracking-wide focus:scale-125 focus:outline-none focus:border-2 focus:p-2 focus:ring-2 focus:ring-yellow-300 dark:focus:ring-dark-teal"
-                            href="#testemonials">Testimonials</a>
+                        <a class="" href="#testemonials">Testimonials</a>
                     </li>
                     <li
-                        class="bg-blue-500 text-gray-500 px-12 py-6 md:px-4 md:py-2 xl:px-8 xl:py-[18px] 2xl:px-10 2xl:py-5 dark:bg-dark-blue2 nav-content-item dark:hover:bg-dark-bg">
-                        <a class="transition-all border-yellow-500 rounded-lg dark:border-dark-blue1 hover:tracking-wide hover:scale-150 focus:tracking-wide focus:scale-125 focus:outline-none focus:text-dark-teal"
-                            href="#contact">Contact Me</a>
+                        class="bg-blue-500 text-gray-500 px-12 py-6 md:px-4 md:py-2 xl:px-8 xl:py-[18px] 2xl:px-10 2xl:py-5 dark:bg-dark-blue2 nav-content-item cta">
+                        <a class="" href="#contact">Contact Me</a>
                     </li>
                 </ul>
                 <a id="nav-icn" class="ml-2 md:hidden nav-icn open z-50" href="#!" title="Open Menu">
@@ -112,12 +109,12 @@
                 <div
                     class="bg-yellow-500 rotate-45 w-48 h-48 justify-center mt-16 md:w-[25rem] md:h-[29rem] md:rotate-[67deg] md:translate-x-12 md:-translate-y-72 lg:w-[29rem] lg:h-[33rem] xl:h-[43rem] 2xl:h-[72rem] 2xl:w-[38rem] dark:bg-dark-yellow">
                     <picture
-                        class="dark:hidden block -rotate-45 md:rotate-[293deg] md:w-80 md:h-80 md:translate-x-12 md:translate-y-[14rem] lg:w-[25rem] lg:h-[25rem] lg:translate-x-[3.9rem] xl:translate-y-[24rem] 2xl:translate-x-[4.5rem] 2xl:translate-y-[49rem] 2xl:w-[30rem] 2xl:h-[30rem]">
+                        class="hero-img dark:hidden block -rotate-45 md:rotate-[293deg] md:w-80 md:h-80 md:translate-x-12 md:translate-y-[14rem] lg:w-[25rem] lg:h-[25rem] lg:translate-x-[3.9rem] xl:translate-y-[24rem] 2xl:translate-x-[4.5rem] 2xl:translate-y-[49rem] 2xl:w-[30rem] 2xl:h-[30rem]">
                         <source srcset="assets/images/hero-light.webp" type="image/webp">
                         <img src="assets/images/hero-light.jpeg" alt="Picture of myself">
                     </picture>
                     <picture
-                        class="hidden dark:block -rotate-45 md:rotate-[293deg] md:w-80 md:h-80 md:translate-x-12 md:translate-y-[14rem] lg:w-[25rem] lg:h-[25rem] lg:translate-x-[3.9rem] xl:translate-y-[24rem] 2xl:translate-x-[4.5rem] 2xl:translate-y-[49rem] 2xl:w-[30rem] 2xl:h-[30rem]">
+                        class="hero-img hidden dark:block -rotate-45 md:rotate-[293deg] md:w-80 md:h-80 md:translate-x-12 md:translate-y-[14rem] lg:w-[25rem] lg:h-[25rem] lg:translate-x-[3.9rem] xl:translate-y-[24rem] 2xl:translate-x-[4.5rem] 2xl:translate-y-[49rem] 2xl:w-[30rem] 2xl:h-[30rem]">
                         <source srcset="assets/images/hero-dark.webp" type="image/webp">
                         <img src="assets/images/hero-dark.jpeg" alt="Picture of myself">
                     </picture>
@@ -168,7 +165,7 @@
                 class="w-44 h-44 bg-yellow-200 z-[-10] absolute top-3/4 right-5 rotate-45 md:w-56 md:h-56 md:top-2/4 md:bg-yellow-100 xl:right-40 2xl:h-96 2xl:w-96 2xl:right-64 dark:bg-dark-yellow">
             </div>
             <a href="#contact"
-                class="bg-blue-500 text-gray-500 font-sans font-bold text-lg px-8 py-4 mt-11 inline-block mx-auto w-auto md:uppercase 2xl:text-2xl 2xl:px-12 2xl:py-6 dark:bg-dark-blue2">Contact
+                class="bg-blue-500 text-gray-500 font-sans font-bold text-lg px-8 py-4 mt-11 inline-block mx-auto w-auto md:uppercase 2xl:text-2xl 2xl:px-12 2xl:py-6 dark:bg-dark-blue2 cta">Contact
                 Me</a>
         </div>
     </section>
@@ -247,7 +244,8 @@
             </h3>
             <div class="flex flex-col justify-center mt-4 ">
                 <div class="flex flex-row justify-between items-center mt-4 md:mt-12 md:text-left">
-                    <a href="https://ramiashqar.github.io/uniquelands/" title="Visit Unique Lands" class="relative" target="_blank" rel="noopener">
+                    <a href="https://ramiashqar.github.io/uniquelands/" title="Visit Unique Lands" class="relative"
+                        target="_blank" rel="noopener">
                         <picture class="md:w-72">
                             <source srcset="assets/images/uniquelands.webp" type="image/webp">
                             <img src="assets/images/uniquelands.png" alt="unique lands co. website">
@@ -273,7 +271,8 @@
                     </div>
                 </div>
                 <div class="flex flex-row justify-between items-center mt-4 md:mt-12">
-                    <a href="https://ramiashqar.github.io/travel-site/" title="Visit Travel Site" class="relative" target="_blank" rel="noopener">
+                    <a href="https://ramiashqar.github.io/travel-site/" title="Visit Travel Site" class="relative"
+                        target="_blank" rel="noopener">
                         <picture class="md:w-72">
                             <source srcset="assets/images/Travel-Site.webp" type="image/webp">
                             <img src="assets/images/Travel-Site.png" alt="travel site template">
@@ -300,7 +299,8 @@
                     </div>
                 </div>
                 <div class="flex flex-row justify-between items-center mt-4 md:mt-12">
-                    <a href="https://ramiashqar.github.io/Natours/" title="Visit Natours Agency" target="_blank" rel="noopener" class="relative">
+                    <a href="https://ramiashqar.github.io/Natours/" title="Visit Natours Agency" target="_blank"
+                        rel="noopener" class="relative">
                         <picture class="md:w-72">
                             <source srcset="assets/images/Natours.webp" type="image/webp">
                             <img src="assets/images/Natours.png" alt="Natours Agency site template">
@@ -418,20 +418,20 @@
             <form action="https://formsubmit.co/81ecb53c3cc1483d1d0190d564c2d850" method="POST"
                 class="flex flex-col justify-center items-center md:mt-12 md:justify-start md:items-start md:z-10">
                 <input
-                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 2xl:text-xl 2xl:p-5"
+                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 dark:text-dark-blue1 2xl:text-xl 2xl:p-5"
                     type="text" name="name" id="name" placeholder="Your Name Here">
                 <input
-                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 2xl:text-xl 2xl:p-5"
+                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 dark:text-dark-blue1 2xl:text-xl 2xl:p-5"
                     type="email" name="email" id="email" placeholder="Your Email Here">
                 <input type="hidden" name="_next" value="https://ramiashqar.me/thanks.html">
                 <input type="hidden" name="_subject" value="ramiashqar.me submission !!">
                 <input type="text" name="_honey" style="display:none">
                 <input type="hidden" name="_captcha" value="false">
                 <textarea
-                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 2xl:text-xl 2xl:p-5"
+                    class="mt-5 placeholder-blue-900 text-base w-11/12 p-3 font-bold md:w-3/5 md:z-10 lg:w-7/12 dark:placeholder-dark-blue1 dark:bg-dark-blue2 dark:text-dark-blue1 2xl:text-xl 2xl:p-5"
                     name="message" id="message" cols="30" rows="10" placeholder="Your Message Here"></textarea>
                 <button id="submit"
-                    class="uppercase mt-5 bg-yellow-500 text-blue-600 font-bold text-base py-4 px-8 md:mt-10 md:font-black md:z-10 dark:bg-dark-blue2 dark:text-dark-blue1 2xl:text-xl 2xl:px-10 2xl:py-5"
+                    class="cta uppercase mt-5 bg-yellow-500 text-blue-600 font-bold text-base py-4 px-8 md:mt-10 md:font-black md:z-10 dark:bg-dark-blue2 dark:text-dark-blue1 2xl:text-xl 2xl:px-10 2xl:py-5"
                     type="submit">Send Email</button>
             </form>
             <div class="hidden contact-bg md:absolute md:z-[0] md:bottom-1 md:block md:right-1 md:opacity-90">
@@ -530,8 +530,8 @@
                     </defs>
                 </svg>
             </a>
-            <a href="https://www.linkedin.com/in/rami-ashqar/" title="Contact me on Linkden" target="_blank" rel="noopener"
-                class="ml-6 w-8 h-8 stroke-[4px] md:ml-10 lg:w-10 lg:h-10 ">
+            <a href="https://www.linkedin.com/in/rami-ashqar/" title="Contact me on Linkden" target="_blank"
+                rel="noopener" class="ml-6 w-8 h-8 stroke-[4px] md:ml-10 lg:w-10 lg:h-10 ">
                 <svg class="social-icns" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M29.3333 14.6665C32.2507 14.6665 35.0486 15.8254 37.1115 17.8883C39.1744 19.9512 40.3333 22.7491 40.3333 25.6665V38.4998H33V25.6665C33 24.694 32.6137 23.7614 31.9261 23.0738C31.2384 22.3861 30.3058 21.9998 29.3333 21.9998C28.3609 21.9998 27.4282 22.3861 26.7406 23.0738C26.053 23.7614 25.6667 24.694 25.6667 25.6665V38.4998H18.3333V25.6665C18.3333 22.7491 19.4923 19.9512 21.5552 17.8883C23.6181 15.8254 26.416 14.6665 29.3333 14.6665V14.6665Z"
